@@ -28,6 +28,7 @@
 #include "Singleton.h"
 #include "Console.h"
 #include "Menu.h"
+#include "MenuInformation.h"
 
 #include "SceneInformation.h"
 #include "Scene.h"

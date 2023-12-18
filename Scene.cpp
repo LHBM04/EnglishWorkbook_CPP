@@ -96,6 +96,6 @@ void SceneManager::UnloadScene() {
     this->m_previousScenes.pop();
     
     if (!this->m_previousScenes.empty()) {
-        this->LoadScene(this->m_previousScenes.top()->GetName());
+        this->LoadScene(this->m_previousScenes.top()->GetBuildIndex());
     }
 }
