@@ -94,6 +94,7 @@ void SceneManager::UnloadScene() {
     this->m_previousScenes.pop();
     
     if (!this->m_previousScenes.empty()) {
-        this->LoadScene(this->m_previousScenes.top()->GetBuildIndex());
+        Console::Clear();
+        this->m_previousScenes.top()->Enter();
     }
 }
