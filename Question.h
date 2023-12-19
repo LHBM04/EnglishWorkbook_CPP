@@ -7,19 +7,9 @@ protected:
 public:
 	Question();
 	~Question();
-};
-
-class QuestionGenerator final {
-private:
-	static const std::string FILE_DIRECTION;
-};
-
-class QuestionManager final {
-private:
 
 public:
-	QuestionManager();
-	~QuestionManager();
-
+	const bool IsRight() const;
+	virtual void Marking(const std::string& answer) = 0;
 };
 

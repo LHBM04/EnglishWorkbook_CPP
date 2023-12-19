@@ -33,9 +33,13 @@
 #include "Menu.h"
 
 #include "Question.h"
+#include "WordQuestion.h"
+#include "QuestionGenerator.h"
+#include "WorkbookManager.h"
 
 #include "SceneInformation.h"
 #include "Scene.h"
+#include "SceneManager.h"
 #include "MainScene.h"
 #include "StudyScene.h"
 #include "ReviewScene.h"

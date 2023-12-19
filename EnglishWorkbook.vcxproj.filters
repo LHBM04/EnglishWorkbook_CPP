@@ -27,7 +27,19 @@
     </ClInclude>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Question.h">
-      <Filter>Studies</Filter>
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestionGenerator.h">
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkbookManager.h">
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="WordQuestion.h">
+      <Filter>Questions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,7 +63,19 @@
     </ClCompile>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Question.cpp">
-      <Filter>Studies</Filter>
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestionGenerator.cpp">
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkbookManager.cpp">
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="WordQuestion.cpp">
+      <Filter>Questions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +85,235 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{b18d9d5d-3afc-48c9-8b91-e999ac3fd51f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Studies">
+    <Filter Include="Questions">
       <UniqueIdentifier>{a68b6c73-3db6-4264-8dde-2b3e928b09b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="StudyFile">
+      <UniqueIdentifier>{4c4350b8-007d-4e45-8020-787501011a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StudyFile\Word">
+      <UniqueIdentifier>{adfed5fb-a822-4886-96cc-5c485dcfab54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StudyFile\Iverb">
+      <UniqueIdentifier>{4d31673c-5508-472f-bf71-ce78c9bb45b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StudyFile\Sentence">
+      <UniqueIdentifier>{4ed85887-869a-4bc1-b6b0-8dfc72f3353a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StudyFile\Word\Question_Word_0.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_1.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_2.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_3.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_4.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_5.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_6.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_7.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_8.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_9.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_10.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_11.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_12.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_13.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_14.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_15.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_16.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_17.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_18.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_19.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_20.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_21.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_22.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_23.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_24.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_25.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_26.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_27.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_28.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_29.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Word\Question_Word_30.json">
+      <Filter>StudyFile\Word</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_0.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_1.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_2.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_3.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_4.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_5.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_6.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_7.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_8.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_9.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_10.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_11.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_12.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_13.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_14.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_15.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_16.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_17.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_18.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Iverb\Question_Iverb_19.json">
+      <Filter>StudyFile\Iverb</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_0.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_1.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_2.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_3.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_4.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_5.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_6.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_7.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_8.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_9.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_10.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_11.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_12.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_13.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_14.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_15.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_16.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_17.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_18.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
+    <None Include="StudyFile\Sentence\Question_Sentence_19.json">
+      <Filter>StudyFile\Sentence</Filter>
+    </None>
   </ItemGroup>
 </Project>
