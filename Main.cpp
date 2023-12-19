@@ -1,6 +1,10 @@
 #include "Header.h"
 
+static const std::string PROGRAM_NAME = "English Workbook";
+static const std::string PROGRAM_VIRSION = "1.0";
 
 int main() {
-	Start([]() { SceneManager::GetInstance().LoadScene(SCENE_NAME_MAINMENU); });
+	Console::WriteLine(std::format("{:s} Ver.{:s}", PROGRAM_NAME, PROGRAM_VIRSION));
+	system("pause");
+	SceneManager::GetInstance().LoadScene(0);
 }

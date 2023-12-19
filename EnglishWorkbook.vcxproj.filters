@@ -28,9 +28,6 @@
     <ClInclude Include="Header.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Program.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="MenuInformation.h">
       <Filter>Scenes</Filter>
     </ClInclude>

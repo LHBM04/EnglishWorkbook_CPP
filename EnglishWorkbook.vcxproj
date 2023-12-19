@@ -133,7 +133,6 @@
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MenuInformation.h" />
-    <ClInclude Include="Program.h" />
     <ClInclude Include="ReviewScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneInformation.h" />

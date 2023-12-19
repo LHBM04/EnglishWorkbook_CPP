@@ -35,5 +35,3 @@
 #include "MainScene.h"
 #include "StudyScene.h"
 #include "ReviewScene.h"
-
-#include "Program.h"

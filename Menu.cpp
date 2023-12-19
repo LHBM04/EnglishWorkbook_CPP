@@ -3,8 +3,7 @@
 Menu::Menu(const std::string& name, const std::string& description, const std::function<void()>& event) : m_name(name), m_description(description), m_event(event) {
 }
 
-Menu::~Menu()
-{
+Menu::~Menu() {
 }
 
 const std::string& Menu::GetName() const {

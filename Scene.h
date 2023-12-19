@@ -78,12 +78,12 @@ private:
 	/// <summary>
 	/// 관리하고 있는 Scene들.
 	/// </summary>
-	std::vector<std::shared_ptr<Scene>>										m_scenes;
+	std::vector<std::shared_ptr<Scene>>	m_scenes;
 
 	/// <summary>
 	/// 이전 Scene들.
 	/// </summary>
-	std::stack<std::shared_ptr<Scene>, std::deque<std::shared_ptr<Scene>>>	m_previousScenes;
+	std::stack<std::shared_ptr<Scene>>	m_previousScenes;
 
 public:
 	SceneManager();
