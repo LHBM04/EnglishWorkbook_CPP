@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,7 +132,7 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="MenuInformation.h" />
+    <ClInclude Include="Question.h" />
     <ClInclude Include="ReviewScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneInformation.h" />
@@ -144,6 +144,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainScene.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Question.cpp" />
     <ClCompile Include="ReviewScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="StudyScene.cpp" />

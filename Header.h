@@ -1,5 +1,11 @@
 #pragma once
 
+#pragma warning(disable: 4996)  
+#pragma warning(disable: 4244)
+#pragma warning(disable: 26819)
+
+#define GET_NAME(n) #n
+
 // Standards
 #include <algorithm>
 #include <chrono>
@@ -12,6 +18,7 @@
 #include <functional>
 #include <iostream>
 #include <memory>
+#include <nlohmann/json.hpp>
 #include <numeric>
 #include <queue>
 #include <stack>
@@ -21,14 +28,11 @@
 #include <type_traits>
 #include <vector>
 
-#include "json/json.h"
-#pragma comment(lib, "jsoncpp.lib")
-
-
 #include "Singleton.h"
 #include "Console.h"
 #include "Menu.h"
-#include "MenuInformation.h"
+
+#include "Question.h"
 
 #include "SceneInformation.h"
 #include "Scene.h"

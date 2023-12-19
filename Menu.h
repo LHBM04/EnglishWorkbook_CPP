@@ -8,15 +8,15 @@ private:
 	/// <summary>
 	/// 메뉴 이름.
 	/// </summary>
-	std::string m_name;
+	std::string				m_name;
 	/// <summary>
 	/// 메뉴 설명.
 	/// </summary>
-	std::string m_description;
+	std::string				m_description;
 	/// <summary>
 	/// 메뉴 이벤트.
 	/// </summary>
-	std::function<void()> m_event;
+	std::function<void()>	m_event;
 
 public:
 	Menu(const std::string& name, const std::string& description, const std::function<void()>& event);
@@ -52,7 +52,6 @@ private:
 
 public:
 	MenuSelector(const size_t size);
-	MenuSelector(const MenuSelector& _other) = default;
 	~MenuSelector();
 
 public:

@@ -13,9 +13,6 @@
     <ClInclude Include="ReviewScene.h">
       <Filter>Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="SceneInformation.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="Console.h">
       <Filter>Utils</Filter>
     </ClInclude>
@@ -25,11 +22,12 @@
     <ClInclude Include="Singleton.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuInformation.h">
+    <ClInclude Include="SceneInformation.h">
       <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="Question.h">
+      <Filter>Studies</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -51,8 +49,9 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Core</Filter>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Question.cpp">
+      <Filter>Studies</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +61,8 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{b18d9d5d-3afc-48c9-8b91-e999ac3fd51f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core">
-      <UniqueIdentifier>{dffe3cae-cba7-4093-9e37-0bead0c0968e}</UniqueIdentifier>
+    <Filter Include="Studies">
+      <UniqueIdentifier>{a68b6c73-3db6-4264-8dde-2b3e928b09b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

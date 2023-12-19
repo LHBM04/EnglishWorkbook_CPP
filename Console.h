@@ -56,7 +56,7 @@ private: // Input(Template)
 			}
 		}
 	}
-	
+
 public: // Input(Default Type)
 	/// <summary>
 	/// 값을 입력 받습니다.
@@ -76,7 +76,7 @@ public: // Input(Unsigned Type)
 	static const unsigned int Read(const unsigned int min = std::numeric_limits<unsigned int>().min(), const unsigned int max = std::numeric_limits<unsigned int>().max(), std::function<void()> message = nullptr);
 	static const unsigned long Read(const unsigned long min = std::numeric_limits<unsigned long>().min(), const unsigned long max = std::numeric_limits<unsigned long>().max(), std::function<void()> message = nullptr);
 	static const unsigned long long Read(const unsigned long long min = std::numeric_limits<unsigned long long>().min(), const unsigned long long max = std::numeric_limits<unsigned long long>().max(), std::function<void()> message = nullptr);
-	
+
 public: // Input(string Type)
 	/// <summary>
 	/// 문장을 입력받습니다.
@@ -84,6 +84,5 @@ public: // Input(string Type)
 	/// <param name="length">입력받을 문장의 최대 길이.</param>
 	/// <returns>입력받은 문장.</returns>
 	static const std::string ReadLine(const size_t length = std::numeric_limits<std::streamsize>().max(), std::function<void()> message = nullptr);
-	
-};
 
+};

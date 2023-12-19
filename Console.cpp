@@ -6,7 +6,7 @@ void Console::Write(const std::string& text, long long duration) {
 	if (text.empty()) {
 		return;
 	}
-	
+
 	for (const char& ch : text) {
 		std::cout << ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(duration ? std::chrono::milliseconds(duration) : DEFAULT_DISPLAY_DURATION));
@@ -17,7 +17,7 @@ void Console::Write(const char* text, long long duration) {
 	if (strlen(text) <= 0) {
 		return;
 	}
-	
+
 	for (const char* ch = text; *ch != '\0'; ++ch) {
 		std::cout << *ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(duration ? std::chrono::milliseconds(duration) : DEFAULT_DISPLAY_DURATION));
@@ -28,7 +28,7 @@ void Console::WriteLine(const std::string& text, long long duration) {
 	if (text.empty()) {
 		return;
 	}
-	
+
 	for (const char& ch : text) {
 		std::cout << ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(duration ? std::chrono::milliseconds(duration) : DEFAULT_DISPLAY_DURATION));
@@ -43,7 +43,7 @@ void Console::WriteLine(const char* text, long long duration) {
 	if (strlen(text) <= 0) {
 		return;
 	}
-	
+
 	for (const char* ch = text; *ch != '\0'; ++ch) {
 		std::cout << *ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(duration ? std::chrono::milliseconds(duration) : DEFAULT_DISPLAY_DURATION));

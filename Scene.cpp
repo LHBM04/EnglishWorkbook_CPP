@@ -90,11 +90,11 @@ void SceneManager::UnloadScene() {
         return;
     }
 
+    Console::Clear();
     this->m_previousScenes.top()->Exit();
     this->m_previousScenes.pop();
     
     if (!this->m_previousScenes.empty()) {
-        Console::Clear();
         this->m_previousScenes.top()->Enter();
     }
 }
