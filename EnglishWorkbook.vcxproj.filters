@@ -29,9 +29,6 @@
     <ClInclude Include="Question.h">
       <Filter>Questions</Filter>
     </ClInclude>
-    <ClInclude Include="QuestionGenerator.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
     <ClInclude Include="WorkbookManager.h">
       <Filter>Questions</Filter>
     </ClInclude>
@@ -39,6 +36,15 @@
       <Filter>Scenes</Filter>
     </ClInclude>
     <ClInclude Include="WordQuestion.h">
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="SenteceQuestion.h">
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="IverbQuestion.h">
+      <Filter>Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="WrongQuestion.h">
       <Filter>Questions</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,9 +71,6 @@
     <ClCompile Include="Question.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
-    <ClCompile Include="QuestionGenerator.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
     <ClCompile Include="WorkbookManager.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
@@ -75,6 +78,15 @@
       <Filter>Scenes</Filter>
     </ClCompile>
     <ClCompile Include="WordQuestion.cpp">
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="SenteceQuestion.cpp">
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="IverbQuestion.cpp">
+      <Filter>Questions</Filter>
+    </ClCompile>
+    <ClCompile Include="WrongQuestion.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
   </ItemGroup>

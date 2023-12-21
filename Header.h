@@ -34,7 +34,9 @@
 
 #include "Question.h"
 #include "WordQuestion.h"
-#include "QuestionGenerator.h"
+#include "SenteceQuestion.h"
+#include "IverbQuestion.h"
+#include "WrongQuestion.h"
 #include "WorkbookManager.h"
 
 #include "SceneInformation.h"
