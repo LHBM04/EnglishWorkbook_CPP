@@ -8,10 +8,6 @@ StudyScene::StudyScene() : Scene(SCENE_NAME_STUDY, SCENE_DESC_STUDY), m_menuSele
 	 this->m_menuSelector.AddMenu(std::make_shared<Menu>("뒤로 가기", std::format("{:s}로 돌아갑니다.", SCENE_NAME_MAINMENU), []() { SceneManager::GetInstance().UnloadScene(); }));
 }
 
-StudyScene::~StudyScene()
-{
-}
-
 void StudyScene::Routine() {
 	Scene::Routine();
 	this->m_menuSelector.Display();

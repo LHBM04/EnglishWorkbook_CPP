@@ -5,9 +5,6 @@ unsigned int Scene::DEFAULT_SCENE_BUILD_INDEX = 0;
 Scene::Scene(const std::string& name, const std::string& description) : m_buildIndex(Scene::DEFAULT_SCENE_BUILD_INDEX++), m_name(name), m_description(description) {
 }
 
-Scene::~Scene() {
-}
-
 const unsigned int Scene::GetBuildIndex() const {
 	return this->m_buildIndex;
 }

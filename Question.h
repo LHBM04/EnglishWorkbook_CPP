@@ -6,10 +6,10 @@ protected:
 
 public:
 	Question();
-	~Question();
+	~Question() = default;
 
 public:
 	const bool IsRight() const;
-	virtual void Marking(const std::string& answer) = 0;
+	void Marking(const std::function<bool(const Question& question)> answer);
 };
 

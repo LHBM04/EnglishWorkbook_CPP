@@ -33,7 +33,7 @@ private:
 
 public:
 	Scene(const std::string& name, const std::string& description);
-	~Scene();
+	~Scene() = default;
 
 public:
 	/// <summary>

@@ -135,17 +135,18 @@
     <ClInclude Include="IverbQuestion.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuSelector.h" />
     <ClInclude Include="Question.h" />
     <ClInclude Include="ReviewScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneInformation.h" />
     <ClInclude Include="SceneManager.h" />
-    <ClInclude Include="SenteceQuestion.h" />
+    <ClInclude Include="SentenceQuestion.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="StudyScene.h" />
     <ClInclude Include="WordQuestion.h" />
     <ClInclude Include="WorkbookManager.h" />
-    <ClInclude Include="WrongQuestion.h" />
+    <ClInclude Include="WrongScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Console.cpp" />
@@ -153,15 +154,16 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainScene.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuSelector.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="ReviewScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="SenteceQuestion.cpp" />
+    <ClCompile Include="SentenceQuestion.cpp" />
     <ClCompile Include="StudyScene.cpp" />
     <ClCompile Include="WordQuestion.cpp" />
     <ClCompile Include="WorkbookManager.cpp" />
-    <ClCompile Include="WrongQuestion.cpp" />
+    <ClCompile Include="WrongScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StudyFile\Iverb\Question_Iverb_0.json" />

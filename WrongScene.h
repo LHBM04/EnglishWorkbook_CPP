@@ -1,11 +1,11 @@
 #pragma once
 
-class StudyScene : public Scene {
+class WrongScene final : public Scene {
 private:
 	MenuSelector m_menuSelector;
 
 public:
-	StudyScene();
+	WrongScene();
 
 public:
 	virtual void Routine() override;

@@ -14,10 +14,6 @@ private:
 
 public:
 	IverbQuestion(const std::vector<std::string>& english, const std::string& korean);
-	~IverbQuestion();
 
-public:
-	// Question을(를) 통해 상속됨
-	void Marking(const std::string& answer) override;
 };
 

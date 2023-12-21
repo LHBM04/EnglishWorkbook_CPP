@@ -6,7 +6,6 @@ private:
 
 public:
 	ReviewScene();
-	~ReviewScene();
 
 public:
 	virtual void Routine() override;

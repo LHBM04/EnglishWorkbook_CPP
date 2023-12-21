@@ -3,9 +3,10 @@
 Question::Question() : m_isRight(false) {
 }
 
-Question::~Question() {
-}
-
 const bool Question::IsRight() const {
 	return this->m_isRight;
+}
+
+void Question::Marking(const std::function<bool(const Question& question)> answer) {
+	this->m_isRight = answer(*this);
 }

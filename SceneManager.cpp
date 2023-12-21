@@ -1,13 +1,12 @@
 #include "Header.h"
 
 SceneManager::SceneManager() {
-    this->m_scenes.reserve(3);
+    // Scene วาด็.
+    this->m_scenes.reserve(4);
     this->m_scenes.push_back(std::make_shared<MainScene>());
     this->m_scenes.push_back(std::make_shared<StudyScene>());
     this->m_scenes.push_back(std::make_shared<ReviewScene>());
-}
-
-SceneManager::~SceneManager() {
+    this->m_scenes.push_back(std::make_shared<WrongScene>());
 }
 
 void SceneManager::AddScene(const std::shared_ptr<Scene>& scene) {

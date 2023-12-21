@@ -17,7 +17,7 @@ private:
 
 public:
 	SceneManager();
-	~SceneManager();
+	~SceneManager() = default;
 
 public:
 	/// <summary>

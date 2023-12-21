@@ -6,7 +6,6 @@ private:
 
 public:
 	MainScene();
-	~MainScene();
 
 public:
 	virtual void Routine() override;

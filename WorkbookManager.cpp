@@ -21,7 +21,7 @@ void WorkbookManager::CreateSentenceWorkbook() {
 		this->m_jsonReader = std::ifstream(jsonFile.path());
 		this->m_jsonReader >> this->m_jsonCashe;
 
-		const auto newQuestion = std::make_shared<const SenteceQuestion>(this->m_jsonCashe.at("m_english").get<std::string>(),
+		const auto newQuestion = std::make_shared<const SentenceQuestion>(this->m_jsonCashe.at("m_english").get<std::string>(),
 																	     this->m_jsonCashe.at("m_korean").get<std::string>());
 
 		this->m_sentenceWorkbook.push_back(newQuestion);
@@ -47,9 +47,26 @@ WorkbookManager::WorkbookManager() {
 	CreateIverbWorkbook();
 }
 
-WorkbookManager::~WorkbookManager() {
-}
-
 const std::vector<std::shared_ptr<const WordQuestion>>& WorkbookManager::GetWordWorkbook() const {
 	return this->m_wordWorkBook;
+}
+
+const std::vector<std::shared_ptr<const SentenceQuestion>>& WorkbookManager::GetSentenceWorkbook() const {
+	return this->m_sentenceWorkbook;
+}
+
+const std::vector<std::shared_ptr<const IverbQuestion>>& WorkbookManager::GetIverbWorkbook() const {
+	return this->m_iverbWorkbook;
+}
+
+const std::vector<WrongWordQuestion>& WorkbookManager::GetWrongWordbook() const {
+	return this->m_wrongWordWorkbook;
+}
+
+const std::vector<WrongSentenceQuestion>& WorkbookManager::GetWrongSentenceQuestion() const {
+	return this->m_wrongSentenceWorkbook;
+}
+
+const std::vector<WrongIverbQuestion>& WorkbookManager::GetWrongIverbQuestion() const {
+	return this->m_wrongIverbQuestion;
 }

@@ -3,7 +3,7 @@
 /// <summary>
 /// 영문장 문제.
 /// </summary>
-class SenteceQuestion final : public Question {
+class SentenceQuestion final : public Question {
 private:
 	/// <summary>
 	/// 영어 답안지
@@ -16,11 +16,10 @@ private:
 	std::string m_korean;
 
 public:
-	SenteceQuestion(const std::string& english, const std::string& korean);
-	~SenteceQuestion();
+	SentenceQuestion(const std::string& english, const std::string& korean);
 
 public:
-	// Question을(를) 통해 상속됨
-	void Marking(const std::string& answer) override;
-};
+	const std::string& GetEnglish() const;
+	const std::string& GetKorean() const;
+ };
 

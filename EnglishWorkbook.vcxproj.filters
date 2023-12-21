@@ -38,21 +38,21 @@
     <ClInclude Include="WordQuestion.h">
       <Filter>Questions</Filter>
     </ClInclude>
-    <ClInclude Include="SenteceQuestion.h">
+    <ClInclude Include="SentenceQuestion.h">
       <Filter>Questions</Filter>
     </ClInclude>
     <ClInclude Include="IverbQuestion.h">
       <Filter>Questions</Filter>
     </ClInclude>
-    <ClInclude Include="WrongQuestion.h">
-      <Filter>Questions</Filter>
+    <ClInclude Include="MenuSelector.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="WrongScene.h">
+      <Filter>Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene.cpp">
-      <Filter>Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="MainScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
     <ClCompile Include="StudyScene.cpp">
@@ -80,14 +80,20 @@
     <ClCompile Include="WordQuestion.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
-    <ClCompile Include="SenteceQuestion.cpp">
+    <ClCompile Include="SentenceQuestion.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
     <ClCompile Include="IverbQuestion.cpp">
       <Filter>Questions</Filter>
     </ClCompile>
-    <ClCompile Include="WrongQuestion.cpp">
-      <Filter>Questions</Filter>
+    <ClCompile Include="MenuSelector.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="WrongScene.cpp">
+      <Filter>Scenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

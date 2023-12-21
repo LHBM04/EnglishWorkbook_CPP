@@ -6,9 +6,6 @@ MainScene::MainScene() : Scene(SCENE_NAME_MAINMENU, SCENE_DESC_MAINMENU), m_menu
 	this->m_menuSelector.AddMenu(std::make_shared<Menu>("종료하기", "저장 후 프로그램을 종료합니다.", []() { SceneManager::GetInstance().UnloadScene(); }));
 }
 
-MainScene::~MainScene() {
-}
-
 void MainScene::Routine() {
 	Scene::Routine();
 	this->m_menuSelector.Display();
