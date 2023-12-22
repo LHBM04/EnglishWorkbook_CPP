@@ -8,15 +8,16 @@ private:
 	/// <summary>
 	/// 관리하고 있는 Scene들.
 	/// </summary>
-	std::vector<std::shared_ptr<Scene>>	m_scenes;
+	std::map<std::string, std::shared_ptr<Scene>>	m_scenes;
 
 	/// <summary>
 	/// 이전 Scene들.
 	/// </summary>
-	std::stack<std::shared_ptr<Scene>>	m_previousScenes;
+	std::stack<std::shared_ptr<Scene>>				m_previousScenes;
 
 public:
 	SceneManager();
+
 	~SceneManager() = default;
 
 public:
@@ -24,13 +25,7 @@ public:
 	/// Scene을 추가합니다.
 	/// </summary>
 	/// <param name="scene">추가할 Scene.</param>
-	void AddScene(const std::shared_ptr<Scene>& scene);
-
-	/// <summary>
-	/// Scene을 로드합니다.
-	/// </summary>
-	/// <param name="sceneIndex">로드할 Scene의 일련 번호.</param>
-	void LoadScene(const unsigned int sceneIndex);
+	void AddScene(const std::string& name, const std::shared_ptr<Scene>& scene);
 
 	/// <summary>
 	/// Scene을 로드합니다.

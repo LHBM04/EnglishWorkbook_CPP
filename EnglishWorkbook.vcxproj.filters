@@ -22,9 +22,6 @@
     <ClInclude Include="Singleton.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="SceneInformation.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="Header.h" />
     <ClInclude Include="Question.h">
       <Filter>Questions</Filter>
@@ -47,7 +44,10 @@
     <ClInclude Include="MenuSelector.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="WrongScene.h">
+    <ClInclude Include="WrongNoteScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneInformations.h">
       <Filter>Scenes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -92,7 +92,10 @@
     <ClCompile Include="MainScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="WrongScene.cpp">
+    <ClCompile Include="WrongNoteScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneInformations.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
   </ItemGroup>

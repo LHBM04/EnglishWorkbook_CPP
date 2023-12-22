@@ -1,12 +1,6 @@
 #include "Header.h"
 
-unsigned int Scene::DEFAULT_SCENE_BUILD_INDEX = 0;
-
-Scene::Scene(const std::string& name, const std::string& description) : m_buildIndex(Scene::DEFAULT_SCENE_BUILD_INDEX++), m_name(name), m_description(description) {
-}
-
-const unsigned int Scene::GetBuildIndex() const {
-	return this->m_buildIndex;
+Scene::Scene(const std::string& name, const std::string& description) : m_name(name), m_description(description), m_isEntered(false) {
 }
 
 const std::string& Scene::GetName() const {

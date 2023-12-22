@@ -1,17 +1,16 @@
 #include "Header.h"
 
-Menu::Menu(const std::string& name, const std::string& description, const std::function<void()>& event) : m_name(name), m_description(description), m_event(event) {
-}
-
-Menu::~Menu() {
+Menu::Menu(const nlohmann::json& jsonFile, const std::function<void()>& event) : m_event(event) {
+	this->m_information.name		= jsonFile.at("name").get<std::string>();
+	this->m_information.description = jsonFile.at("name").get<std::string>();
 }
 
 const std::string& Menu::GetName() const {
-	return this->m_name;
+	return this->m_information.name;
 }
 
 const std::string& Menu::GetDescription() const {
-	return this->m_description;
+	return this->m_information.description;
 }
 
 void Menu::Invoke() const {

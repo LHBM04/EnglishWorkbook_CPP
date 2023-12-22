@@ -4,8 +4,6 @@
 #pragma warning(disable: 4244)
 #pragma warning(disable: 26819)
 
-#define GET_NAME(n) #n
-
 // Standards
 #include <algorithm>
 #include <chrono>
@@ -40,10 +38,10 @@
 #include "IverbQuestion.h"
 #include "WorkbookManager.h"
 
-#include "SceneInformation.h"
 #include "Scene.h"
+#include "SceneInformations.h"
 #include "MainScene.h"
 #include "ReviewScene.h"
 #include "StudyScene.h"
-#include "WrongScene.h"
+#include "WrongNoteScene.h"
 #include "SceneManager.h"
