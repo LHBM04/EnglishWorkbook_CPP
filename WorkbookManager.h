@@ -55,33 +55,6 @@ private:
 	/// </summary>
 	std::vector<WrongIverbQuestion>			m_wrongIverbQuestion;
 
-private:
-	/// <summary>
-	/// JSON 파일 읽기용 인스턴스.
-	/// </summary>
-	std::ifstream	m_jsonReader;
-
-	/// <summary>
-	/// JSON 파일 캐시.
-	/// </summary>
-	nlohmann::json	m_jsonCashe;
-
-private:
-	/// <summary>
-	/// 영단어 문제집을 만듭니다.
-	/// </summary>
-	void CreateWordWorkbook();
-
-	/// <summary>
-	/// 영문장 문제집을 만듭니다.
-	/// </summary>
-	void CreateSentenceWorkbook();
-
-	/// <summary>
-	/// 불규칙 동사 문제집을 만듭니다.
-	/// </summary>
-	void CreateIverbWorkbook();
-
 public:
 	WorkbookManager();
 	~WorkbookManager() = delete;

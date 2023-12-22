@@ -31,6 +31,7 @@
 #include "Console.h"
 #include "Menu.h"
 #include "MenuSelector.h"
+#include "MenuInformations.h"
 
 #include "Question.h"
 #include "WordQuestion.h"

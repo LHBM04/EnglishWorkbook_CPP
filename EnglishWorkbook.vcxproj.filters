@@ -50,6 +50,9 @@
     <ClInclude Include="SceneInformations.h">
       <Filter>Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="MenuInformations.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene.cpp">
@@ -97,6 +100,9 @@
     </ClCompile>
     <ClCompile Include="SceneInformations.cpp">
       <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuInformations.cpp">
+      <Filter>Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

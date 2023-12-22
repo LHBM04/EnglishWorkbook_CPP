@@ -4,47 +4,40 @@ const std::filesystem::path WorkbookManager::DIRECTORY_PATH_WORD		= "StudyFile/W
 const std::filesystem::path WorkbookManager::DIRECTORY_PATH_SENTENCE	= "StudyFile/Sentence";
 const std::filesystem::path WorkbookManager::DIRECTORY_PATH_IVERB		= "StudyFile/Iverb";
 
-void WorkbookManager::CreateWordWorkbook() {
+WorkbookManager::WorkbookManager() {
+	std::ifstream	jsonReader;	// 파일 입력 인스턴스.
+	nlohmann::json	jsonCashe;	// JSON 파일 캐시.
+	
+	// 영단어
 	for (const auto& jsonFile : std::filesystem::directory_iterator(this->DIRECTORY_PATH_WORD)) {
-		this->m_jsonReader = std::ifstream(jsonFile.path());
-		this->m_jsonReader >> this->m_jsonCashe;
+		jsonReader = std::ifstream(jsonFile.path());
+		jsonReader >> jsonCashe;
 
-		const auto newQuestion = std::make_shared<const WordQuestion>(this->m_jsonCashe.at("m_english").get<std::string>(),
-																	  this->m_jsonCashe.at("m_korean").get<std::vector<std::string>>());
+		const auto newQuestion = std::make_shared<const WordQuestion>(jsonCashe.at("m_english").get<std::string>(),
+																	  jsonCashe.at("m_korean").get<std::vector<std::string>>());
 
 		this->m_wordWorkBook.push_back(newQuestion);
 	}
-}
-
-void WorkbookManager::CreateSentenceWorkbook() {
+	// 영문장
 	for (const auto& jsonFile : std::filesystem::directory_iterator(this->DIRECTORY_PATH_SENTENCE)) {
-		this->m_jsonReader = std::ifstream(jsonFile.path());
-		this->m_jsonReader >> this->m_jsonCashe;
+		jsonReader = std::ifstream(jsonFile.path());
+		jsonReader >> jsonCashe;
 
-		const auto newQuestion = std::make_shared<const SentenceQuestion>(this->m_jsonCashe.at("m_english").get<std::string>(),
-																	     this->m_jsonCashe.at("m_korean").get<std::string>());
+		const auto newQuestion = std::make_shared<const SentenceQuestion>(jsonCashe.at("m_english").get<std::string>(),
+																		  jsonCashe.at("m_korean").get<std::string>());
 
 		this->m_sentenceWorkbook.push_back(newQuestion);
 	}
-}
-
-void WorkbookManager::CreateIverbWorkbook() {
+	// 불규칙 동사.
 	for (const auto& jsonFile : std::filesystem::directory_iterator(this->DIRECTORY_PATH_IVERB)) {
-		this->m_jsonReader = std::ifstream(jsonFile.path());
-		this->m_jsonReader >> this->m_jsonCashe;
+		jsonReader = std::ifstream(jsonFile.path());
+		jsonReader >> jsonCashe;
 
-		const auto newQuestion = std::make_shared<const IverbQuestion>(this->m_jsonCashe.at("m_english").get<std::vector<std::string>>(),
-																	   this->m_jsonCashe.at("m_korean").get<std::string>());
+		const auto newQuestion = std::make_shared<const IverbQuestion>(jsonCashe.at("m_english").get<std::vector<std::string>>(),
+																	   jsonCashe.at("m_korean").get<std::string>());
 
 		this->m_iverbWorkbook.push_back(newQuestion);
 	}
-}
-
-WorkbookManager::WorkbookManager() {
-	// Workbook 할당.
-	CreateWordWorkbook();
-	CreateSentenceWorkbook();
-	CreateIverbWorkbook();
 }
 
 const std::vector<std::shared_ptr<const WordQuestion>>& WorkbookManager::GetWordWorkbook() const {
