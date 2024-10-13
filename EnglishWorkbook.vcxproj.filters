@@ -1,346 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="Scene.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="MainScene.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="StudyScene.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="ReviewScene.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="Singleton.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Question.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
-    <ClInclude Include="WorkbookManager.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="WordQuestion.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
-    <ClInclude Include="SentenceQuestion.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
-    <ClInclude Include="IverbQuestion.h">
-      <Filter>Questions</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuSelector.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="WrongNoteScene.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneInformations.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuInformations.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Scene.cpp">
+    <ClCompile Include="Frameworks\Main.cpp" />
+    <ClCompile Include="Frameworks\Utilities\Console.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Frameworks\Scenes\Scene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="StudyScene.cpp">
+    <ClCompile Include="Frameworks\Scenes\SceneManager.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="ReviewScene.cpp">
+    <ClCompile Include="Frameworks\Utilities\Menu.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Frameworks\Scenes\MainScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <Filter>Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Question.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
-    <ClCompile Include="WorkbookManager.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="WordQuestion.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
-    <ClCompile Include="SentenceQuestion.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
-    <ClCompile Include="IverbQuestion.cpp">
-      <Filter>Questions</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuSelector.cpp">
-      <Filter>Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="MainScene.cpp">
-      <Filter>Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="WrongNoteScene.cpp">
-      <Filter>Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneInformations.cpp">
-      <Filter>Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuInformations.cpp">
-      <Filter>Utils</Filter>
+    <ClCompile Include="Frameworks\Utilities\MenuManager.cpp">
+      <Filter>Utilities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{2765059b-44e8-44ca-9493-7f6c10e0c060}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Scenes">
-      <UniqueIdentifier>{c35a790b-7f74-4bd6-a424-162f688ba8b5}</UniqueIdentifier>
+      <UniqueIdentifier>{84c89022-b4f6-4564-8de5-5e85fb06a716}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Utils">
-      <UniqueIdentifier>{b18d9d5d-3afc-48c9-8b91-e999ac3fd51f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Questions">
-      <UniqueIdentifier>{a68b6c73-3db6-4264-8dde-2b3e928b09b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="StudyFile">
-      <UniqueIdentifier>{4c4350b8-007d-4e45-8020-787501011a07}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="StudyFile\Word">
-      <UniqueIdentifier>{adfed5fb-a822-4886-96cc-5c485dcfab54}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="StudyFile\Iverb">
-      <UniqueIdentifier>{4d31673c-5508-472f-bf71-ce78c9bb45b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="StudyFile\Sentence">
-      <UniqueIdentifier>{4ed85887-869a-4bc1-b6b0-8dfc72f3353a}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f3000ca4-e2e4-4af1-bd52-ebbaf4128fd8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="StudyFile\Word\Question_Word_0.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_1.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_2.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_3.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_4.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_5.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_6.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_7.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_8.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_9.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_10.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_11.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_12.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_13.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_14.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_15.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_16.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_17.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_18.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_19.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_20.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_21.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_22.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_23.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_24.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_25.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_26.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_27.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_28.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_29.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Word\Question_Word_30.json">
-      <Filter>StudyFile\Word</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_0.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_1.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_2.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_3.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_4.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_5.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_6.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_7.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_8.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_9.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_10.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_11.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_12.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_13.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_14.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_15.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_16.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_17.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_18.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Iverb\Question_Iverb_19.json">
-      <Filter>StudyFile\Iverb</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_0.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_1.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_2.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_3.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_4.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_5.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_6.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_7.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_8.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_9.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_10.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_11.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_12.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_13.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_14.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_15.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_16.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_17.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_18.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
-    <None Include="StudyFile\Sentence\Question_Sentence_19.json">
-      <Filter>StudyFile\Sentence</Filter>
-    </None>
+    <ClInclude Include="Frameworks\Utilities\Console.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Scenes\Scene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Scenes\SceneManager.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Utilities\Singleton.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Utilities\Menu.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Scenes\MainScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Frameworks\Utilities\MenuManager.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
