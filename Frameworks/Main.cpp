@@ -1,3 +1,4 @@
+#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -14,24 +15,34 @@ public:
 	std::vector<std::string> answers;
 } Question;
 
+std::vector<Question> questions;
+
 int main() {
-	std::ifstream file{ "Resources/StudyFile/Word/Question_Word_0.json", std::ios::in };
-	if (not file) {
-		std::cerr << "Error!" << std::endl;
+	for (const auto& path : std::filesystem::directory_iterator("Resources/StudyFile/Word")) {
+		std::ifstream inputStream{ path.path(), std::ios::in };
+		if (not inputStream) {
+			std::cerr << "Error!" << std::endl;
+		}
+
+		nlohmann::json	jsonFile{};
+		inputStream >> jsonFile;
+
+		Question question;
+		for (const auto& iter : jsonFile["m_english"]) {
+			question.question = iter.get<std::string>();
+		}
+
+		for (const auto& iter : jsonFile["m_korean"]) {
+			question.answers.push_back(iter.get<std::string>());
+		}
+
+		questions.push_back(question);
+	}
+	
+	for (const auto& iter : questions) {
+		std::cout << iter.question << std::endl;
+		std::cout << iter.answers[0] << std::endl;
+		std::cout << "=====================================" << std::endl;
 	}
 
-	nlohmann::json jsonFile;
-	file >> jsonFile;
-
-	Question question;
-	for (const auto& iter : jsonFile["m_english"]) {
-		question.question = iter.get<std::string>();
-	}
-
-	for (const auto& iter : jsonFile["m_korean"]) {
-		question.answers.push_back(iter.get<std::string>());
-	}
-
-	std::cout << question.question << std::endl;
-	std::cout << question.answers[0] << std::endl;
 }
