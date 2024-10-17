@@ -5,7 +5,7 @@ void Console::Write(const std::string& text, long long duration) {
 		return;
 	}
 	
-	for (const char& ch : text) {
+	for (const char ch : text) {
 		std::cout << ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(std::chrono::milliseconds(duration)));
 	}
@@ -28,7 +28,7 @@ void Console::WriteLine(const std::string& text, long long duration) {
 		return;
 	}
 	
-	for (const char& ch : text) {
+	for (const char ch : text) {
 		std::cout << ch;
 		std::this_thread::sleep_for(std::chrono::milliseconds(std::chrono::milliseconds(duration)));
 	}
@@ -94,11 +94,11 @@ const unsigned long long Console::Get(const unsigned long long min, const unsign
 }
 
 const std::string Console::GetLine(const size_t length) {
-	auto value = std::string("");
+	std::string value{ "" };
 	while (true) {
 		std::getline(std::cin, value);
 
-		if (value.length() <= length && !std::cin.fail()) {
+		if (value.length() <= length and !std::cin.fail()) {
 			return value;
 		}
 

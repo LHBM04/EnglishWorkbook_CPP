@@ -17,7 +17,7 @@ public:
 	Menu(const Menu&) = delete;
 	Menu(const char* const, const char* const, void(*)());
 	Menu(const std::string&, const std::string&, std::function<void()>);
-	~Menu() = delete;
+	~Menu();
 
 public:
 	const std::string& GetName() const;

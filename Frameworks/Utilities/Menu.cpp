@@ -1,15 +1,24 @@
 #include "Menu.h"
 
-Menu::Menu(const char* const _name, const char* const _description, void(*_event)()) :
+Menu::Menu(
+	const char* const _name, 
+	const char* const _description,
+	void(*_event)()) :
 	m_name(_name),
 	m_description(_description),
 	m_event(_event) {
 }
 
-Menu::Menu(const std::string& _name, const std::string& _description, std::function<void()> _event) :
+Menu::Menu(
+	const std::string& _name, 
+	const std::string& _description, 
+	std::function<void()> _event) :
 	m_name(_name),
 	m_description(_description),
 	m_event(_event) {
+}
+
+Menu::~Menu() {
 }
 
 const std::string& Menu::GetName() const {
